@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfAppCalculadoraPds.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppCalculadoraPds"
+        mc:Ignorable="d"
+        Title="Calculadora Simples" Height="525" Width="778" Background="#FFF3B9B9">
+    <Grid Margin="81,24,-244,-40" RenderTransformOrigin="0.68,0.571">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="18*"/>
+            <RowDefinition Height="491*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="589*"/>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="139*"/>
+            <ColumnDefinition Width="102*"/>
+            <ColumnDefinition Width="70*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Valor 1:" HorizontalAlignment="Left" Margin="66,49,0,0" Grid.Row="3" VerticalAlignment="Top" Height="26" Width="50"/>
+        <TextBox x:Name="tbValorB" HorizontalAlignment="Left" Margin="406,80,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
+        <Label Content="Valor 2:" HorizontalAlignment="Left" Margin="417,49,0,0" Grid.Row="3" VerticalAlignment="Top" RenderTransformOrigin="5.914,-3.912" Height="26" Width="50"/>
+        <TextBox x:Name="tbValorA" HorizontalAlignment="Left" Margin="66,80,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
+        <Button x:Name="btMais" Content="+" HorizontalAlignment="Left" Margin="66,144,0,0" Grid.Row="3" VerticalAlignment="Top" Width="80" Height="49" Click="btMais_Click" Background="#FFFFFEFE"/>
+        <Button x:Name="btMultiplicacao" Content="*" HorizontalAlignment="Left" Margin="356,144,0,0" Grid.Row="3" VerticalAlignment="Top" RenderTransformOrigin="-0.144,1.846" Height="49" Width="80" Click="btMultiplicacao_Click" Background="#FFFFFBFB"/>
+        <Button x:Name="btMenos" Content="-" HorizontalAlignment="Left" Margin="207,144,0,0" Grid.Row="3" VerticalAlignment="Top" Height="49" Width="80" Click="btMenos_Click" Background="White"/>
+        <Button x:Name="btDivisao" Content="/" HorizontalAlignment="Left" Margin="500,144,0,0" Grid.Row="3" VerticalAlignment="Top" Width="80" Height="49" Click="btDivisao_Click" Background="#FFFFFEFE"/>
+        <Label Content="Resultado:" HorizontalAlignment="Left" Margin="66,237,0,0" Grid.Row="3" VerticalAlignment="Top" Height="26" Width="65"/>
+        <TextBox x:Name="tbResultado" HorizontalAlignment="Left" Margin="66,263,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Height="18" SelectionTextBrush="White"/>
+
+    </Grid>
+</Window>
